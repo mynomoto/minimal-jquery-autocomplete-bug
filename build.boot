@@ -1,8 +1,8 @@
 (set-env!
  :dependencies '[[adzerk/boot-cljs          "1.7.228-1"]
                  [adzerk/boot-reload        "0.4.7"]
-                 [hoplon/boot-hoplon        "0.1.13"]
-                 [hoplon/hoplon             "6.0.0-alpha14"]
+                 [tailrecursion/boot-hoplon        "0.1.0-SNAPSHOT"]
+                 [tailrecursion/hoplon             "6.0.0-alpha1"]
                  [cljsjs/jquery               "2.2.2-0"]
                  [cljsjs/jquery-ui            "1.11.4-0"]
                  [org.clojure/clojure       "1.8.0"]
@@ -14,7 +14,7 @@
 (require
   '[adzerk.boot-cljs         :refer [cljs]]
   '[adzerk.boot-reload       :refer [reload]]
-  '[hoplon.boot-hoplon       :refer [hoplon prerender]]
+  '[tailrecursion.boot-hoplon       :refer [hoplon prerender]]
   '[tailrecursion.boot-jetty :refer [serve]])
 
 (deftask dev
