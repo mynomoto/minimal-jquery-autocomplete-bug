@@ -1,6 +1,6 @@
 # jquery-ui-bug
 
-A [Hoplon][3] project designed to...well, that part is up to you.
+A [Hoplon][3] project designed to show a jquery-ui-bug
 
 ## Dependencies
 
@@ -19,7 +19,7 @@ A [Hoplon][3] project designed to...well, that part is up to you.
     - auto reload the html page on changes
     - Clojurescript REPL
 
-2. Go to [http://localhost:8000][2] in your browser. You should see "Hello, Hoplon!".
+2. Go to [http://localhost:8000][2] in your browser. You should see "Hoplon!" and a input field. Start typing "a" several times slowly on the input field. You should see the autocomplete list with several repeated items. On the branch hoplon-alpha1 the same doesn't happen.
 
 3. If you edit and save a file, the task will recompile the code and reload the
    browser to show the updated version.

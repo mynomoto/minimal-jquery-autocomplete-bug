@@ -1,7 +1,27 @@
-(page "index.html")
+(page "index.html"
+  (:require
+    [cljsjs.jquery-ui]))
+
+(defc selected "")
+
+(defn autocomplete
+  []
+  (input
+    :type "text"
+    :value selected
+    :focus #(.autocomplete (js/jQuery (.. % -target))
+              (clj->js {:source (clj->js [{:label "aaaaaa" :value "aaaaaa"}
+                                          {:label "aaabbb" :value "aaabbb"}
+                                          {:label "cccddd" :value "cccddd"}])
+                        :minLength 2
+                        :change (fn [ev ui]
+                                  (reset! selected @ev))
+                        :select (fn [ev ui]
+                                  (reset! selected (.. ui -item -value)))}))))
 
 (html
   (head
-    (link :href "app.css" :rel "stylesheet"))
+    (link :href "jquery-ui-redmond.css" :rel "stylesheet"))
   (body
-    (h1 "Hello, Hoplon!")))
+    (h1 "Hello, Hoplon!")
+    (autocomplete)))

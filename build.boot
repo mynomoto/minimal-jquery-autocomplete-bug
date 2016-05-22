@@ -1,11 +1,13 @@
 (set-env!
-  :dependencies '[[adzerk/boot-cljs          "1.7.170-3"]
-                  [adzerk/boot-reload        "0.4.2"]
-                  [hoplon/boot-hoplon        "0.1.10"]
-                  [hoplon/hoplon             "6.0.0-alpha11"]
-                  [org.clojure/clojure       "1.7.0"]
-                  [org.clojure/clojurescript "1.7.189"]
-                  [tailrecursion/boot-jetty  "0.1.0"]]
+ :dependencies '[[adzerk/boot-cljs          "1.7.228-1"]
+                 [adzerk/boot-reload        "0.4.7"]
+                 [hoplon/boot-hoplon        "0.1.13"]
+                 [hoplon/hoplon             "6.0.0-alpha14"]
+                 [cljsjs/jquery               "2.2.2-0"]
+                 [cljsjs/jquery-ui            "1.11.4-0"]
+                 [org.clojure/clojure       "1.8.0"]
+                 [org.clojure/clojurescript "1.8.51"]
+                 [tailrecursion/boot-jetty  "0.1.0"]]
   :source-paths #{"src"}
   :asset-paths  #{"assets"})
 
